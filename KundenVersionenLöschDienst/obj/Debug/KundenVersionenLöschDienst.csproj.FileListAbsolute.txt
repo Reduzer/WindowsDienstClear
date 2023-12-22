@@ -1,0 +1,7 @@
+C:\Users\FDeubner\Documents\GitHub\WindowsDienstClear\KundenVersionenLöschDienst\bin\Debug\KundenVersionenLöschDienst.exe.config
+C:\Users\FDeubner\Documents\GitHub\WindowsDienstClear\KundenVersionenLöschDienst\bin\Debug\KundenVersionenLöschDienst.exe
+C:\Users\FDeubner\Documents\GitHub\WindowsDienstClear\KundenVersionenLöschDienst\bin\Debug\KundenVersionenLöschDienst.pdb
+C:\Users\FDeubner\Documents\GitHub\WindowsDienstClear\KundenVersionenLöschDienst\obj\Debug\KundenVersionenLöschDienst.csproj.AssemblyReference.cache
+C:\Users\FDeubner\Documents\GitHub\WindowsDienstClear\KundenVersionenLöschDienst\obj\Debug\KundenVersionenLöschDienst.csproj.CoreCompileInputs.cache
+C:\Users\FDeubner\Documents\GitHub\WindowsDienstClear\KundenVersionenLöschDienst\obj\Debug\KundenVersionenLöschDienst.exe
+C:\Users\FDeubner\Documents\GitHub\WindowsDienstClear\KundenVersionenLöschDienst\obj\Debug\KundenVersionenLöschDienst.pdb

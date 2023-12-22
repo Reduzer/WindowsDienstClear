@@ -52,23 +52,11 @@ namespace KundenVersionenLöschDienst
             }
         }
 
-        public bool setMessage(string message, int messageValue)
+        public void setMessage(string message)
         {
             this.message = message;
 
-            if (hash.setMessage(message))
-            {
-                checkMessage = hash.generateHash();
-                if (checkMessage == messageValue)
-                {
-                    writeToLog(null);
-                    return true;
-                }
-                else{
-                    return false;
-                }
-            }
-            return false;
+            writeToLog(message);
         }
 
         public void setCount(int count)

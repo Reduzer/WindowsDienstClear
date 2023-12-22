@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,12 +14,11 @@ namespace KundenVersionenLöschDienst
         private int fileCount;
         private int actualFileCount = 0;
 
-        private string fileName;
+        private string[] allFileNames;
         private string[] filesToDelete;
 
         private string path = @"";
 
-        private double creationDate;
 
         #endregion
 
@@ -35,9 +35,9 @@ namespace KundenVersionenLöschDienst
 
         public int countFiles()
         {
-            if (true /* Wenn Datein vorhanden sind */)
+            if (Directory.GetDirectories(path) != null)
             {
-                //Get File amount
+                fileCount = Directory.GetDirectories(path, "*", SearchOption.TopDirectoryOnly).Length;
 
                 return fileCount;
             }
@@ -50,12 +50,17 @@ namespace KundenVersionenLöschDienst
 
         public int countFilesToDelete()
         {
+            allFileNames = Directory.GetDirectories(path);
+
             for (int i = 0; i < fileCount; i++)
             {
-                if (true /*File Creation Date > 30 days*/)
+                if (Directory.GetCreationTime(allFileNames[i]).Month < DateTime.Today.Month)
                 {
-                    actualFileCount++;
-                    //fileName -> filesToDelete[]
+                    if (Directory.GetCreationTime(allFileNames[i]).Day < DateTime.Today.Day)
+                    {
+                        actualFileCount++;
+                        filesToDelete[i] = allFileNames[i];
+                    }
                 }
             }
 
@@ -64,11 +69,12 @@ namespace KundenVersionenLöschDienst
 
         public bool deleteFiles()
         {
-            foreach (string file in filesToDelete)
+            for(int i = 0; i < actualFileCount; i++) 
             {
-                //Delete File, where fileName -> filesToDelete[]
+                Directory.Delete(filesToDelete[i]);
                 actualFileCount--;
             }
+
             if (actualFileCount == 0)
             {
                 return true;
@@ -80,6 +86,5 @@ namespace KundenVersionenLöschDienst
         }
 
         #endregion
-
     }
 }

@@ -34,11 +34,22 @@ namespace KundenVersionenLöschDienst
 
         public static void timercallback(object state)
         {
-
-            if (del.deleteFiles())
+            try
             {
-                log.setCount(del.countFiles());
-                log.setActualCount(del.countFilesToDelete());
+                del.countFiles();
+                del.countFilesToDelete();
+                if (del.deleteFiles())
+                {
+                    return;
+                }
+                else
+                {
+                    log.setMessage("An error accured but we dont know what tf happend");
+                }
+            }
+            catch (Exception e)
+            {
+                log.setMessage(e.ToString());
             }
         }
     }
