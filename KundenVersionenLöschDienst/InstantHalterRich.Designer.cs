@@ -1,6 +1,6 @@
 ﻿namespace KundenVersionenLöschDienst
 {
-    partial class Service1
+    partial class InstantHalterRich
     {
         /// <summary> 
         /// Required designer variable.

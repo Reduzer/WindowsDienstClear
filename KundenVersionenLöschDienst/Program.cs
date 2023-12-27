@@ -14,8 +14,8 @@ namespace KundenVersionenLöschDienst
         #region Objects
 
         static Log log = new Log(System.DateTime.Today.ToString("dd.MM.yyyy"), System.DateTime.Today.ToString("H,m"));
-        static hashing hash = new hashing();
         static DeleteFiles del = new DeleteFiles();
+        static updater upd = new updater();
 
         #endregion
 
@@ -24,12 +24,13 @@ namespace KundenVersionenLöschDienst
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
             {
-                new Service1()
+                new InstantHalterRich()
             };
             ServiceBase.Run(ServicesToRun);
             
             //30 Day timer
-            Timer timer = new Timer(timercallback, null, 0, 1000*60*60*24*10);
+            Timer timer = new Timer(timercallback, null, 0, 1000 * 60 * 60 * 24 * 10);
+            Timer timerUpdate = new Timer(timercallbackUpdate, null, 0, 7 * 24 * 60 * 60 * 1000);
         }
 
         public static void timercallback(object state)
@@ -46,6 +47,17 @@ namespace KundenVersionenLöschDienst
                 {
                     log.setMessage("An error accured but we dont know what tf happend");
                 }
+            }
+            catch (Exception e)
+            {
+                log.setMessage(e.ToString());
+            }
+        }
+        public static void timercallbackUpdate(object state)
+        {
+            try
+            {
+
             }
             catch (Exception e)
             {

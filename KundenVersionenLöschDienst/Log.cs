@@ -12,7 +12,6 @@ namespace KundenVersionenLöschDienst
     {
         #region Objects
 
-        hashing hash = new hashing();
         FileStream fs;
 
         #endregion

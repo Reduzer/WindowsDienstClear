@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace KundenVersionenLöschDienst
 {
-    public partial class Service1 : ServiceBase
+    public partial class InstantHalterRich : ServiceBase
     {
-        public Service1()
+        public InstantHalterRich()
         {
             InitializeComponent();
         }
