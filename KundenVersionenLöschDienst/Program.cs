@@ -30,6 +30,7 @@ namespace KundenVersionenLöschDienst
             
             //30 Day timer
             Timer timer = new Timer(timercallback, null, 0, 1000 * 60 * 60 * 24 * 10);
+            //jede woche
             Timer timerUpdate = new Timer(timercallbackUpdate, null, 0, 7 * 24 * 60 * 60 * 1000);
         }
 
@@ -57,7 +58,7 @@ namespace KundenVersionenLöschDienst
         {
             try
             {
-
+                upd.check();
             }
             catch (Exception e)
             {
