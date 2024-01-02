@@ -18,7 +18,7 @@ namespace KundenVersionenLöschDienst
 
         #region Vars
 
-        private string path = @"";
+        private string path = @"./Logs";
 
         private string message;
         private string date;
@@ -32,16 +32,20 @@ namespace KundenVersionenLöschDienst
 
         #region Constructors
 
-        public Log(string date, string time)
+        public Log()
         {
-            this.date = date;
-            this.time = time;
             createLog();
         }
 
         #endregion
 
         #region Methods
+
+        public void setTime(string date, string time)
+        {
+            this.date = date;
+            this.time = time;
+        }
 
         public void createLog()
         {
