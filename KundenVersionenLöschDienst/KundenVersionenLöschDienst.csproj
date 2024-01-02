@@ -50,8 +50,9 @@
     <Compile Include="Deleter\deleteFiles.cs" />
     <Compile Include="Ping\ApPing.cs" />
     <Compile Include="Ping\EmailPing.cs" />
+    <Compile Include="Ping\pingSql.cs" />
+    <Compile Include="Suche noch nen Namen\getSqlData.cs" />
     <Compile Include="Updater\sql.cs" />
-    <Compile Include="Log.cs" />
     <Compile Include="InstantHalterRich.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -65,8 +66,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Logs\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

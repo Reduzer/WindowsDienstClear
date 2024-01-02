@@ -14,7 +14,6 @@ namespace KundenVersionenLöschDienst
     {
         #region Objects
 
-        static Log log = new Log();
         static DeleteFiles del = new DeleteFiles();
         static updater upd = new updater();
         static ApPing ApPing = new ApPing();
@@ -32,8 +31,6 @@ namespace KundenVersionenLöschDienst
                 new InstantHalterRich()
             };
             ServiceBase.Run(ServicesToRun);
-
-            log.setTime(System.DateTime.Today.ToString("dd.MM.yyyy"), System.DateTime.Now.ToString("H.m"));
             
             //20 Day timer for File Deletion
             Timer timer = new Timer(timercallback, null, 0, 1000 * 60 * 60 * 24 * 20);
@@ -59,12 +56,12 @@ namespace KundenVersionenLöschDienst
                 }
                 else
                 {
-                    log.setMessage("An error accured but we dont know what tf happend");
+                    throw new Exception();
                 }
             }
             catch (Exception e)
             {
-                log.setMessage(e.ToString());
+                
             }
         }
 
@@ -76,7 +73,7 @@ namespace KundenVersionenLöschDienst
             }
             catch (Exception e)
             {
-                log.setMessage(e.ToString());
+                
             }
         }
 
