@@ -1,5 +1,4 @@
-﻿using KundenVersionenLöschDienst.Ping;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
@@ -16,6 +15,7 @@ namespace KundenVersionenLöschDienst
 
         static DeleteFiles del = new DeleteFiles();
         static updater upd = new updater();
+        static clientSetupUpdate updClientSetup = new clientSetupUpdate();
         static ApPing ApPing = new ApPing();
         static EmailPing EmailPing = new EmailPing();
 
@@ -61,7 +61,7 @@ namespace KundenVersionenLöschDienst
             }
             catch (Exception e)
             {
-                
+                ExceptionHandler.setException(e.ToString());
             }
         }
 
@@ -73,7 +73,7 @@ namespace KundenVersionenLöschDienst
             }
             catch (Exception e)
             {
-                
+                ExceptionHandler.setException(e.ToString());
             }
         }
 

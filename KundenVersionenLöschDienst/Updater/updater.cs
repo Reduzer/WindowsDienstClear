@@ -15,9 +15,9 @@ namespace KundenVersionenLöschDienst
 
         sql sql = new sql();
 
-        readonly string dirPath = "";
-        readonly string insPath = "";
-        readonly string updPath = "";
+        readonly string dirPath = @"";
+        readonly string insPath = @"";
+        readonly string updPath = @"";
         readonly string updInstaller;
 
         #endregion

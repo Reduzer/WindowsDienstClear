@@ -16,6 +16,7 @@ namespace KundenVersionenLöschDienst
         SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
 
         private string[] mailUser;
+        private int count;
 
 
         #endregion
@@ -35,13 +36,47 @@ namespace KundenVersionenLöschDienst
         {
             builder.UserID = "sa";
             builder.Password = "applesauce/2";
-            builder.ConnectionString = "";
-            builder.InitialCatalog = "";
+            builder.DataSource = "FDEU-131\\SQLEXPRESS";
+            builder.InitialCatalog = "Test2";
+        }
+
+        public string[] returnMailUsers()
+        {
+            getEmailUsers();
+
+            return mailUser;
         }
 
         private void getEmailUsers()
         {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
+                {
+                    string sqlCommand = "";
 
+                    using (SqlCommand cmd = new SqlCommand(sqlCommand, connection))
+                    {
+                        connection.Open();
+
+                        using (SqlDataReader rd = cmd.ExecuteReader())
+                        {
+                            while(rd.Read())
+                            {
+                                mailUser[count] = rd.GetString(count);
+                                count++;
+                            }
+                        }
+
+                        connection.Close();
+                        count = 0;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                ExceptionHandler.setException(e.ToString());
+            }
         }
 
         #endregion

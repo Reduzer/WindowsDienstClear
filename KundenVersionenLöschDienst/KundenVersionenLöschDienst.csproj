@@ -47,11 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClientSetup\clientSetupUpdate.cs" />
     <Compile Include="Deleter\deleteFiles.cs" />
     <Compile Include="Ping\ApPing.cs" />
     <Compile Include="Ping\EmailPing.cs" />
     <Compile Include="Ping\pingSql.cs" />
-    <Compile Include="Suche noch nen Namen\getSqlData.cs" />
+    <Compile Include="Usefull Things\ExceptionHandler.cs" />
     <Compile Include="Updater\sql.cs" />
     <Compile Include="InstantHalterRich.cs">
       <SubType>Component</SubType>

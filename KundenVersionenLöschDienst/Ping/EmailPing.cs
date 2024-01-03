@@ -7,11 +7,13 @@ using System.Threading.Tasks;
 
 using Outlook = Microsoft.Office.Interop.Outlook;
 
-namespace KundenVersionenLöschDienst.Ping
+namespace KundenVersionenLöschDienst
 {
     internal class EmailPing
     {
         #region Vars & Obj
+
+        pingSql pingsql = new pingSql();
 
         private string[] emailAdress;
         private string subject;
@@ -33,10 +35,14 @@ namespace KundenVersionenLöschDienst.Ping
 
         #region Methods
 
+        private void setEmailAdresses()
+        {
+            emailAdress = pingsql.returnMailUsers();
+        }
+
         public void sendEmail()
         {
-            emailAdress[0] = "fdeubner@cvs.de";
-            emailAdress[1] = "freichenbach@cvs.de";
+            setEmailAdresses();
 
             try
             {
