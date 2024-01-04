@@ -28,6 +28,8 @@ namespace KundenVersionenLöschDienst
         {
             message = e;
             count++;
+
+            writeToDB();
         }
 
         public static void connectSQL()
@@ -64,6 +66,15 @@ namespace KundenVersionenLöschDienst
                 setException(e.ToString());
             }
         }
+        #endregion
+
+        #region ApPing
+
+        public static void setExceptionAPPing(string msg) 
+        { 
+            
+        }
+
         #endregion
     }
 }
