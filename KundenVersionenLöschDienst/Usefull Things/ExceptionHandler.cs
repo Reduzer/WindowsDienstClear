@@ -96,7 +96,7 @@ namespace KundenVersionenLöschDienst
 
         private static void pingDev(string msg){
             //Create AP Ping for Developer of program
-
+            
         }
 
         private static void writeToDBAP(){
