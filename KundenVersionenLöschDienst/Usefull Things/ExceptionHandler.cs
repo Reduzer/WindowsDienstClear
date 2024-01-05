@@ -72,7 +72,35 @@ namespace KundenVersionenLöschDienst
 
         public static void setExceptionAPPing(string msg) 
         { 
-            
+            if(msg == ""){
+                //Error with Creating Ping
+                pingDev();
+                writeToDBAP();
+            }
+            else if(msg == ""){
+                //Error on Finding Person
+                pingDev();
+                writeToDBAP();
+            }
+            else if(){
+                //Error on Connection
+                pingDev();
+                writeToDBAP();
+            }
+            else{
+                // Other Errors
+                pingDev();
+                writeToDBAP();
+            }
+        }
+
+        private static void pingDev(string msg){
+            //Create AP Ping for Developer of program
+
+        }
+
+        private static void writeToDBAP(){
+
         }
 
         #endregion
