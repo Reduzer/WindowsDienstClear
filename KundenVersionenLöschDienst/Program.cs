@@ -15,6 +15,7 @@ namespace KundenVersionenLöschDienst
 
         static DeleteFiles del = new DeleteFiles();
         static updater upd = new updater();
+        static startSkript startSkript = new startSkript();
         static clientSetupUpdate updClientSetup = new clientSetupUpdate();
         static ApPing ApPing = new ApPing();
         static EmailPing EmailPing = new EmailPing();
@@ -69,6 +70,7 @@ namespace KundenVersionenLöschDienst
         {
             try
             {
+                startSkript.startSkripts();
                 upd.check();
             }
             catch (Exception e)

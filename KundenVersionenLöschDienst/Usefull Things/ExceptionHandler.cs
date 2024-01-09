@@ -74,7 +74,7 @@ namespace KundenVersionenLöschDienst
         { 
             if(msg == ""){
                 //Error with Creating Ping
-                pingDev();
+                pingDev("Error beim Dienst ");
                 writeToDBAP();
             }
             else if(msg == ""){
