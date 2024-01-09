@@ -15,6 +15,7 @@ namespace KundenVersionenLöschDienst
         #region Vars & Obj
 
         static SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+        private static SendEmailForTask smft = new SendEmailForTask();
 
         private static string message;
         private static int count = 0;
@@ -72,31 +73,14 @@ namespace KundenVersionenLöschDienst
 
         public static void setExceptionAPPing(string msg) 
         { 
-            if(msg == ""){
-                //Error with Creating Ping
-                pingDev("Error beim Dienst ");
-                writeToDBAP();
-            }
-            else if(msg == ""){
-                //Error on Finding Person
-                pingDev();
-                writeToDBAP();
-            }
-            else if(){
-                //Error on Connection
-                pingDev();
-                writeToDBAP();
-            }
-            else{
-                // Other Errors
-                pingDev();
-                writeToDBAP();
-            }
+            pingDev(msg);
+            writeToDB();
         }
 
         private static void pingDev(string msg){
             //Create AP Ping for Developer of program
-            
+            smft.setMessage(msg);
+            smft.sendMailToDev();
         }
 
         private static void writeToDBAP(){

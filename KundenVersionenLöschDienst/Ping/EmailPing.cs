@@ -53,6 +53,7 @@ namespace KundenVersionenLöschDienst
                 Outlook.Recipient oRecipient1 = (Outlook.Recipient)oMsg.Recipients.Add(emailAdress[0]);
                 Outlook.Recipient oRecipient2 = (Outlook.Recipient)oMsg.Recipients.Add(emailAdress[1]);
                 oRecipient1.Resolve();
+                oRecipient2.Resolve();
 
                 oMsg.Subject = subject;
 

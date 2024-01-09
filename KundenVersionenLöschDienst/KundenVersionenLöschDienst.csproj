@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="APSchnittstelle\SendEmailForTask.cs" />
     <Compile Include="ClientSetup\clientSetupUpdate.cs" />
     <Compile Include="Deleter\deleteFiles.cs" />
     <Compile Include="Ping\ApPing.cs" />
@@ -63,6 +64,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Updater\updater.cs" />
+    <Compile Include="Wiederherstellungsskripte\startSkript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
