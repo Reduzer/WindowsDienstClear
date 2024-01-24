@@ -1,6 +1,10 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
+using System.Net;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace KundenVersionenLöschDienst
@@ -10,25 +14,27 @@ namespace KundenVersionenLöschDienst
         private string path = "";
         private string[] skriptNames;
         private bool done;
-        private int amountOfSkripts;
+        private int amountOfSkripts = 0;
 
         public startSkript(){
             
         }
 
-        private void getAmountOfSkripts(){
+        private void getAmountOfSkripts()
+        {
             var source = new DirectoryInfo(path);
 
-            var myFile = (from f in source.getFiles()
-                            select f)
+            var myFile = (from f in source.GetFiles()
+                          where f.Extension == ".bat"
+                          select f);
             
             foreach(FileInfo f in myFile){
                 amountOfSkripts++;
-                skriptNames[amountOfSkripts] = f.name;
+                skriptNames[amountOfSkripts] = f.Name;
             }
         }
 
-        public bool startSkripts(){
+        public void startSkripts(){
             getAmountOfSkripts();
 
             System.Diagnostics.Process processToStart = new System.Diagnostics.Process();

@@ -72,6 +72,7 @@ namespace KundenVersionenLöschDienst
             {
                 startSkript.startSkripts();
                 upd.check();
+                updClientSetup.check();
             }
             catch (Exception e)
             {

@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="APSchnittstelle\SendEmailForTask.cs" />
     <Compile Include="ClientSetup\clientSetupUpdate.cs" />
+    <Compile Include="ClientSetup\deleteOldSetup.cs" />
     <Compile Include="Deleter\deleteFiles.cs" />
     <Compile Include="Ping\ApPing.cs" />
     <Compile Include="Ping\EmailPing.cs" />
