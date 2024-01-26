@@ -62,6 +62,7 @@ namespace KundenVersionenLöschDienst
             foreach (FileInfo f in info)
             {
                 namesOfSkripts[count] = f.Name;
+                count++;
             }
 
             return true;
@@ -69,9 +70,28 @@ namespace KundenVersionenLöschDienst
 
         private bool runSkripts()
         {
+            try
+            {
+                System.Diagnostics.Process processStart = new System.Diagnostics.Process();
 
+                for (int i = 0; i < namesOfSkripts.Length; i++)
+                {
+                    processStart.StartInfo.FileName = namesOfSkripts[i];
+                    processStart.StartInfo.Arguments = @"";
 
-            return false;
+                    processStart.Start();
+
+                    processStart.WaitForExit();
+                }
+
+                return true;
+            }
+            catch (Exception e)
+            {
+                ExceptionHandler.setException("Error while running skripts: " + e.ToString());
+                return false;
+            }
+            
         }
 
         #endregion
