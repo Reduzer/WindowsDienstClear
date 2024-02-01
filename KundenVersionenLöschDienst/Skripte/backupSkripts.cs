@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace KundenVersionenLöschDienst
 {
-    internal class backupSkripts
+    public class backupSkripts : skriptBase
     {
+        public backupSkripts() 
+        {
+            base.path = @"";
+            base.type = @".sql";
+            base.done = false;
+        }
+
+        public void start()
+        {
+            base.getSkripts();
+            base.startSkripts();
+        }
     }
 }

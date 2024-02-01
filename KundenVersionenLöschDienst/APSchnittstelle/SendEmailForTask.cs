@@ -34,7 +34,8 @@ namespace KundenVersionenLöschDienst {
             builder.InitialCatalog = "InstanthalterRichDB";
         }
 
-        private void getReciever(){
+        private void getReciever()
+        {
             try
             {
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
@@ -65,6 +66,7 @@ namespace KundenVersionenLöschDienst {
         {
             message = msg;
             counter++;
+            getReciever();
             sendMailToDev();
         }
 

@@ -9,15 +9,12 @@ using System.Data.SqlTypes;
 
 namespace KundenVersionenLöschDienst
 {
-    internal class pingSql
+    internal class pingSql : sqlBase
     {
         #region Vars & Obj
 
-        SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-
         private string[] mailUser;
         private int count;
-
 
         #endregion
 
@@ -25,20 +22,12 @@ namespace KundenVersionenLöschDienst
 
         public pingSql()
         {
-            connectSql();
+            base.setInitialCatalog(@"");
         }
 
         #endregion
 
         #region Methods
-
-        private  void connectSql()
-        {
-            builder.UserID = "sa";
-            builder.Password = "applesauce/2";
-            builder.DataSource = "FDEU-131\\SQLEXPRESS";
-            builder.InitialCatalog = "Test2";
-        }
 
         public string[] returnMailUsers()
         {
@@ -51,7 +40,7 @@ namespace KundenVersionenLöschDienst
         {
             try
             {
-                using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
+                using (SqlConnection connection = new SqlConnection(base.builder.ConnectionString))
                 {
                     string sqlCommand = "";
 

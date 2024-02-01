@@ -47,17 +47,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="abstract classes\sqlBase.cs" />
     <Compile Include="APSchnittstelle\SendEmailForTask.cs" />
+    <Compile Include="APSchnittstelle\taskEmailSql.cs" />
     <Compile Include="ClientSetup\clientSetupUpdate.cs" />
     <Compile Include="ClientSetup\deleteOldSetup.cs" />
     <Compile Include="Deleter\deleteFiles.cs" />
+    <Compile Include="Enums\exceptionEnums.cs" />
+    <Compile Include="Handlers\HandlersPing.cs" />
     <Compile Include="Ping\ApPing.cs" />
     <Compile Include="Ping\EmailPing.cs" />
     <Compile Include="Ping\pingSql.cs" />
     <Compile Include="Skripte\backupSkripts.cs" />
     <Compile Include="Skripte\restoreSkripts.cs" />
+    <Compile Include="abstract classes\skriptBase.cs" />
+    <Compile Include="Skripte\SkriptHandler.cs" />
     <Compile Include="Skripte\verteilerSkripts.cs" />
-    <Compile Include="Usefull Things\ExceptionHandler.cs" />
+    <Compile Include="Handlers\ExceptionHandler.cs" />
     <Compile Include="Updater\sql.cs" />
     <Compile Include="InstantHalterRich.cs">
       <SubType>Component</SubType>
@@ -68,13 +74,11 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Updater\updater.cs" />
-    <Compile Include="Skripte\startSkript.cs" />
+    <Compile Include="Handlers\handlersSql.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Dokumentation\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

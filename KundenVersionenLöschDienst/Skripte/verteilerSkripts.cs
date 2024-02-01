@@ -6,7 +6,20 @@ using System.Threading.Tasks;
 
 namespace KundenVersionenLöschDienst
 {
-    internal class verteilerSkripts
+    internal class verteilerSkripts : skriptBase
     {
+
+        public verteilerSkripts()
+        {
+            base.path = @"";
+            base.type = @".bat";
+            base.done = false;
+        }
+
+        public void start()
+        {
+            base.getSkripts();
+            base.startSkripts();
+        }
     }
 }

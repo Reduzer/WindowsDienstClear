@@ -9,11 +9,9 @@ using System.Threading.Tasks;
 
 namespace KundenVersionenLöschDienst
 {
-    internal class sql
+    internal class sql : sqlBase
     {
         #region Vars & Obj
-
-        SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
 
         private int oldVersion;
         private int newVersion;
@@ -23,15 +21,9 @@ namespace KundenVersionenLöschDienst
 
         #endregion
 
-
-        public void connectSQL()
+        public sql()
         {
-            //Datenbank anpassen auf den richtigen Server, Nutzer, etc.
-
-            builder.DataSource = "FDEU-131\\SQLEXPRESS";
-            builder.UserID = "sa";
-            builder.Password = "applesauce/2";
-            builder.InitialCatalog = "APVersionsLog";
+            base.setInitialCatalog(@"");
         }
 
         public bool writeToDB()
@@ -40,7 +32,7 @@ namespace KundenVersionenLöschDienst
 
             try
             {
-                using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
+                using (SqlConnection connection = new SqlConnection(base.builder.ConnectionString))
                 {
                     string sql = "INSERT INTO dbo.VersionsLog (OLDVERSION, NEWVERSION, DATE, ID) VALUES (@old, @new, @date, @id)";
 
@@ -74,11 +66,11 @@ namespace KundenVersionenLöschDienst
             }
         }
 
-       private int getCurrentID()
+        private int getCurrentID()
        {
             try
             {
-                using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
+                using (SqlConnection connection = new SqlConnection(base.builder.ConnectionString))
                 {
                     string sqlCommand = "SELECT TOP 1 ID FROM dbo.VersionLog ORDER BY ID DESC";
 
@@ -107,7 +99,7 @@ namespace KundenVersionenLöschDienst
         {
             try
             {
-                using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
+                using (SqlConnection connection = new SqlConnection(base.builder.ConnectionString))
                 {
 
                     string sqlCommand = "SELECT TOP 1 New FROM dbo.VersionLog ORDER BY ID DESC";

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KundenVersionenLöschDienst.Skripte;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
@@ -15,7 +16,7 @@ namespace KundenVersionenLöschDienst
 
         static DeleteFiles del = new DeleteFiles();
         static updater upd = new updater();
-        static startSkript startSkript = new startSkript();
+        static SkriptHandler startSkript = new SkriptHandler();
         static clientSetupUpdate updClientSetup = new clientSetupUpdate();
         static ApPing ApPing = new ApPing();
         static EmailPing EmailPing = new EmailPing();
@@ -37,12 +38,8 @@ namespace KundenVersionenLöschDienst
             Timer timer = new Timer(timercallback, null, 0, 1000 * 60 * 60 * 24 * 20);
             //7 Day Timer for Version Updates
             Timer timerUpdate = new Timer(timercallbackUpdate, null, 0, 7 * 24 * 60 * 60 * 1000);
-
-
-            if (System.DateTime.Now.Date.ToString("dd.MM") == "01.06")
-            {
-                timercallbackCertifikate();
-            }
+            //Daily Timer for Certifikate Check
+            Timer timerCertifikate = new Timer(dailyCallBack, null, 0, 1 * 24 * 60 * 60 * 1000);
         }
 
         public static void timercallback(object state)
@@ -80,7 +77,7 @@ namespace KundenVersionenLöschDienst
             }
         }
 
-        public static void timercallbackCertifikate()
+        public static void dailyCallBack(object state)
         {
             if (System.DateTime.Today.Date.ToString("dd.MM.yyyy") == "01.06." + year)
             {
