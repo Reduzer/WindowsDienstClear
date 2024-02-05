@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Sql;
+using System.Data.SqlClient;
+using System.Data.SqlTypes;
 
 namespace KundenVersionenLöschDienst
 {
@@ -14,6 +17,10 @@ namespace KundenVersionenLöschDienst
         private string message;
         private string type;
         private int count;
+
+        private string[] recipients;
+
+        SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
 
         #endregion
 
@@ -49,7 +56,9 @@ namespace KundenVersionenLöschDienst
 
         public void ping()
         {
-
+            checkForImportance();
+            selectPersonToPing();
+            sendPing();
         }
 
         private void checkForImportance()
@@ -68,6 +77,55 @@ namespace KundenVersionenLöschDienst
         }
 
         private void selectPersonToPing()
+        {
+            string sqlCommand;
+
+            switch (importance)
+            {
+                case "needsHelpNow":
+                    sqlCommand = "";
+                    break;
+                case "needsDevPing":
+                    sqlCommand = "";
+                    break;
+                case "needsAdminPing":
+                    sqlCommand = "";
+                    break;
+                case "none":
+                    sqlCommand = "";
+                    break;
+                default:
+                    sqlCommand = "";
+                    break;
+            }
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
+                {
+                    using (SqlCommand cmd = new SqlCommand(sqlCommand, connection))
+                    {
+                        connection.Open();
+
+                        using (SqlDataReader rd = cmd.ExecuteReader())
+                        {
+                            int counter = 0;
+                            while (rd.Read())
+                            {
+                                recipients[counter] = rd.GetString(0);
+                                counter++;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                ExceptionHandler.setException(e.ToString());
+            }
+        }
+
+        private void sendPing()
         {
 
         }
