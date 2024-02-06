@@ -10,14 +10,9 @@ using System.Data.SqlTypes;
 using Outlook = Microsoft.Office.Interop.Outlook;
 
 namespace KundenVersionenLöschDienst {
-    public class SendEmailForTask {
-
-        Outlook.Application outlook = new Outlook.Application();
+    public class SendEmailForTask : emailBase 
+    {
         private SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-        
-        private string[] reciever;
-        private string subject;
-        private string message;
 
         private int counter;
 
@@ -49,7 +44,7 @@ namespace KundenVersionenLöschDienst {
                         {
                             while (rd.Read())
                             {
-                                reciever[i] = rd.GetString(0);
+                                base.reciever[i] = rd.GetString(0);
                                 i++;
                             }
                         }
