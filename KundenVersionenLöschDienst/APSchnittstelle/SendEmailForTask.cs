@@ -14,11 +14,9 @@ namespace KundenVersionenLöschDienst {
     {
         private SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
 
-        private int counter;
-
         public SendEmailForTask()
         {
-            counter = 0;
+            base.counter = 0;
         }
 
         private void connectSQL()

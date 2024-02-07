@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Microsoft.Office.Interop.Outlook;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,7 +15,7 @@ namespace KundenVersionenLöschDienst
     {
         #region Vars & Obj
 
-        Outlook.Application outlook = new Outlook.Application();
+        protected Outlook.Application outlook = new Outlook.Application();
 
         protected string[] reciever;
         protected string subject;
@@ -58,7 +60,32 @@ namespace KundenVersionenLöschDienst
 
         protected void sendMail()
         {
+            try
+            {
+                Outlook.MailItem mailItem = (Outlook.MailItem)outlook.CreateItem(Outlook.OlItemType.olMailItem);
 
+                Outlook.Recipient recipient;
+
+                foreach (string s in reciever)
+                {
+                    recipient = (Outlook.Recipient)mailItem.Recipients.Add(s);
+                    recipient.Resolve();
+                }
+
+                mailItem.Subject = subject;
+                mailItem.Body = message;
+
+                mailItem.Save();
+                mailItem.Send();
+
+                recipient = null;
+                mailItem = null;
+                outlook = null;
+            }
+            catch (System.Exception e)
+            {
+                ExceptionHandler.setException(e.ToString());
+            }
         }
 
         #endregion
