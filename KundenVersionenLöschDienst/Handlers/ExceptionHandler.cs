@@ -39,6 +39,7 @@ namespace KundenVersionenLöschDienst
             handlersPing.Count = count;
             handlersPing.Type = type;
 
+
         }
 
         public static void setType(string x)

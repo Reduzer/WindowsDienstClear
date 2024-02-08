@@ -93,5 +93,10 @@ namespace KundenVersionenLöschDienst
                 return;
             }
         }
+
+        public static void iniLoad()
+        {
+
+        }
     }
 }
