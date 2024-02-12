@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KundenVersionenLöschDienst.APSchnittstelle
+namespace KundenVersionenLöschDienst.Handlers
 {
-    internal class taskEmailSql : sqlBase
+    internal class HandlersPingEmail
     {
-
     }
 }

@@ -47,14 +47,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="abstract classes\emailBase.cs" />
     <Compile Include="abstract classes\sqlBase.cs" />
     <Compile Include="APSchnittstelle\SendEmailForTask.cs" />
-    <Compile Include="APSchnittstelle\taskEmailSql.cs" />
     <Compile Include="ClientSetup\clientSetupUpdate.cs" />
     <Compile Include="ClientSetup\deleteOldSetup.cs" />
     <Compile Include="Deleter\deleteFiles.cs" />
     <Compile Include="Enums\exceptionEnums.cs" />
     <Compile Include="Handlers\HandlersPing.cs" />
+    <Compile Include="Handlers\HandlersPingAP.cs" />
+    <Compile Include="Handlers\HandlersPingEmail.cs" />
     <Compile Include="Ping\ApPing.cs" />
     <Compile Include="Ping\EmailPing.cs" />
     <Compile Include="Ping\pingSql.cs" />
@@ -79,6 +81,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="No Idea\TextFile1.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
