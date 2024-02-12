@@ -60,7 +60,7 @@ namespace KundenVersionenLöschDienst
                     importance = exceptionEnums.needsHelpNow.ToString();
                     break;
                 case "Delete":
-                    importance = exceptionEnums.needsDevPing.ToString();
+                    importance = exceptionEnums.needsHelpNow.ToString();
                     break;
                 default:
                     break;
