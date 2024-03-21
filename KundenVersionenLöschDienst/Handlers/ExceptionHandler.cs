@@ -33,6 +33,13 @@ namespace KundenVersionenLöschDienst
             ping();
         }
 
+        public static void setExceptionAPPing(string e)
+        {
+            message = e;
+            count++;
+            ping();
+        }
+
         private static void ping()
         {
             handlersPing.Message = message;

@@ -77,6 +77,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Updater\updater.cs" />
     <Compile Include="Handlers\handlersSql.cs" />
+    <Compile Include="User\lockUsers.cs" />
+    <Compile Include="User\passwordGenerator.cs" />
+    <Compile Include="User\savePassword.cs" />
+    <Compile Include="User\setPassword.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -84,5 +88,6 @@
   <ItemGroup>
     <Content Include="No Idea\TextFile1.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

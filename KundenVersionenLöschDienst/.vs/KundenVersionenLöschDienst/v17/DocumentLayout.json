@@ -1,0 +1,123 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\KundenVersionenL\u00F6schDienst\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{609FD674-F77D-4423-B55A-5EE2B39B80D7}|KundenVersionenL\u00F6schDienst.csproj|c:\\users\\fdeubner\\documents\\github\\windowsdienstclear\\kundenversionenl\u00F6schdienst\\user\\savepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{609FD674-F77D-4423-B55A-5EE2B39B80D7}|KundenVersionenL\u00F6schDienst.csproj|solutionrelative:user\\savepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{609FD674-F77D-4423-B55A-5EE2B39B80D7}|KundenVersionenL\u00F6schDienst.csproj|c:\\users\\fdeubner\\documents\\github\\windowsdienstclear\\kundenversionenl\u00F6schdienst\\user\\setpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{609FD674-F77D-4423-B55A-5EE2B39B80D7}|KundenVersionenL\u00F6schDienst.csproj|solutionrelative:user\\setpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{609FD674-F77D-4423-B55A-5EE2B39B80D7}|KundenVersionenL\u00F6schDienst.csproj|c:\\users\\fdeubner\\documents\\github\\windowsdienstclear\\kundenversionenl\u00F6schdienst\\user\\lockusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{609FD674-F77D-4423-B55A-5EE2B39B80D7}|KundenVersionenL\u00F6schDienst.csproj|solutionrelative:user\\lockusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{609FD674-F77D-4423-B55A-5EE2B39B80D7}|KundenVersionenL\u00F6schDienst.csproj|c:\\users\\fdeubner\\documents\\github\\windowsdienstclear\\kundenversionenl\u00F6schdienst\\user\\passwordgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{609FD674-F77D-4423-B55A-5EE2B39B80D7}|KundenVersionenL\u00F6schDienst.csproj|solutionrelative:user\\passwordgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{609FD674-F77D-4423-B55A-5EE2B39B80D7}|KundenVersionenL\u00F6schDienst.csproj|c:\\users\\fdeubner\\documents\\github\\windowsdienstclear\\kundenversionenl\u00F6schdienst\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{609FD674-F77D-4423-B55A-5EE2B39B80D7}|KundenVersionenL\u00F6schDienst.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 187,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "savePassword.cs",
+              "DocumentMoniker": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\KundenVersionenL\u00F6schDienst\\User\\savePassword.cs",
+              "RelativeDocumentMoniker": "User\\savePassword.cs",
+              "ToolTip": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\KundenVersionenL\u00F6schDienst\\User\\savePassword.cs",
+              "RelativeToolTip": "User\\savePassword.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T09:45:27.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "setPassword.cs",
+              "DocumentMoniker": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\KundenVersionenL\u00F6schDienst\\User\\setPassword.cs",
+              "RelativeDocumentMoniker": "User\\setPassword.cs",
+              "ToolTip": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\KundenVersionenL\u00F6schDienst\\User\\setPassword.cs",
+              "RelativeToolTip": "User\\setPassword.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T09:45:13.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "lockUsers.cs",
+              "DocumentMoniker": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\KundenVersionenL\u00F6schDienst\\User\\lockUsers.cs",
+              "RelativeDocumentMoniker": "User\\lockUsers.cs",
+              "ToolTip": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\KundenVersionenL\u00F6schDienst\\User\\lockUsers.cs",
+              "RelativeToolTip": "User\\lockUsers.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T09:45:01.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "passwordGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\KundenVersionenL\u00F6schDienst\\User\\passwordGenerator.cs",
+              "RelativeDocumentMoniker": "User\\passwordGenerator.cs",
+              "ToolTip": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\KundenVersionenL\u00F6schDienst\\User\\passwordGenerator.cs",
+              "RelativeToolTip": "User\\passwordGenerator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T09:44:52.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\KundenVersionenL\u00F6schDienst\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\KundenVersionenL\u00F6schDienst\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T09:34:58.186Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 745,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
