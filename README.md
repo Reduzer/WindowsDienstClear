@@ -2,7 +2,7 @@
 
 ## Inhalt
 
--Hintergrund
--Aufbau
--Erweiterbarkeit
+- Hintergrund
+- Aufbau
+- Erweiterbarkeit
 -
