@@ -16,6 +16,8 @@ namespace Automatisierung
         private static string currentDate;
         private static string lastDateActed;
 
+        private static int year = 2024;
+
         /// <summary>
         /// Der Haupteinstiegspunkt für die Anwendung.
         /// </summary>
@@ -39,6 +41,10 @@ namespace Automatisierung
             var time = System.DateTime.Now.Hour.ToString();
             var date = System.DateTime.Now.ToString("dd,MM,yyyy");
 
+            
+            
+            string dateFirstPing = "01.06." + year;
+            
             if (time == "17")
             {
                 
@@ -46,7 +52,7 @@ namespace Automatisierung
 
             switch (date)
             {
-
+                case "01.06.":
             }
         }
     }
