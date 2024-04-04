@@ -1,5 +1,4 @@
-﻿using KundenVersionenLöschDienst.Skripte;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
@@ -7,6 +6,8 @@ using System.ServiceProcess;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+
+using KundenVersionenLöschDienst.Skripte;
 
 namespace KundenVersionenLöschDienst
 {
@@ -40,6 +41,11 @@ namespace KundenVersionenLöschDienst
             Timer timerUpdate = new Timer(timercallbackUpdate, null, 0, 7 * 24 * 60 * 60 * 1000);
             //Daily Timer for Certifikate Check
             Timer timerCertifikate = new Timer(dailyCallBack, null, 0, 1 * 24 * 60 * 60 * 1000);
+
+            if (System.DateTime.Now.Hour.ToString() == "17")
+            {
+
+            }
         }
 
         public static void timercallback(object state)
