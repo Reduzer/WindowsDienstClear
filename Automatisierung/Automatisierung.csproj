@@ -52,12 +52,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\check\checkHandler.cs" />
+    <Compile Include="src\Enums\taskEnum.cs" />
+    <Compile Include="src\tasks\taskHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="src\" />
+    <Folder Include="src\tasks\delete\" />
+    <Folder Include="src\tasks\run\" />
+    <Folder Include="src\tasks\update\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

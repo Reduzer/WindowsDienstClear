@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2990536E-E50D-4E13-9857-3F314DEB528B}|Automatisierung.csproj|c:\\users\\fdeubner\\documents\\github\\windowsdienstclear\\automatisierung\\src\\check\\checkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2990536E-E50D-4E13-9857-3F314DEB528B}|Automatisierung.csproj|solutionrelative:src\\check\\checkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2990536E-E50D-4E13-9857-3F314DEB528B}|Automatisierung.csproj|c:\\users\\fdeubner\\documents\\github\\windowsdienstclear\\automatisierung\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2990536E-E50D-4E13-9857-3F314DEB528B}|Automatisierung.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2990536E-E50D-4E13-9857-3F314DEB528B}|Automatisierung.csproj|c:\\users\\fdeubner\\documents\\github\\windowsdienstclear\\automatisierung\\instanthalterrich.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2990536E-E50D-4E13-9857-3F314DEB528B}|Automatisierung.csproj|solutionrelative:instanthalterrich.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2990536E-E50D-4E13-9857-3F314DEB528B}|Automatisierung.csproj|c:\\users\\fdeubner\\documents\\github\\windowsdienstclear\\automatisierung\\src\\enums\\taskenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2990536E-E50D-4E13-9857-3F314DEB528B}|Automatisierung.csproj|solutionrelative:src\\enums\\taskenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2990536E-E50D-4E13-9857-3F314DEB528B}|Automatisierung.csproj|c:\\users\\fdeubner\\documents\\github\\windowsdienstclear\\automatisierung\\src\\tasks\\taskhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2990536E-E50D-4E13-9857-3F314DEB528B}|Automatisierung.csproj|solutionrelative:src\\tasks\\taskhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +34,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAgwA8AAAAqAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAgwDAAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T11:46:48.268Z",
+              "WhenOpened": "2024-04-04T15:25:17.693Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Instanthalterrich.cs [Entwurf]",
-              "DocumentMoniker": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\Instanthalterrich.cs",
-              "RelativeDocumentMoniker": "Instanthalterrich.cs",
-              "ToolTip": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\Instanthalterrich.cs [Entwurf]",
-              "RelativeToolTip": "Instanthalterrich.cs [Entwurf]",
+              "DocumentIndex": 2,
+              "Title": "taskEnum.cs",
+              "DocumentMoniker": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\src\\Enums\\taskEnum.cs",
+              "RelativeDocumentMoniker": "src\\Enums\\taskEnum.cs",
+              "ToolTip": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\src\\Enums\\taskEnum.cs",
+              "RelativeToolTip": "src\\Enums\\taskEnum.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T11:46:18.788Z",
-              "EditorCaption": " [Entwurf]"
+              "WhenOpened": "2024-04-04T15:23:30.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "taskHandler.cs",
+              "DocumentMoniker": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\src\\tasks\\taskHandler.cs",
+              "RelativeDocumentMoniker": "src\\tasks\\taskHandler.cs",
+              "ToolTip": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\src\\tasks\\taskHandler.cs",
+              "RelativeToolTip": "src\\tasks\\taskHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T15:18:39.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "checkHandler.cs",
+              "DocumentMoniker": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\src\\check\\checkHandler.cs",
+              "RelativeDocumentMoniker": "src\\check\\checkHandler.cs",
+              "ToolTip": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\src\\check\\checkHandler.cs",
+              "RelativeToolTip": "src\\check\\checkHandler.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAABrAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T15:15:41.389Z",
+              "EditorCaption": ""
             }
           ]
         },

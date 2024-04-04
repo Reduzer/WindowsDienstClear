@@ -6,12 +6,16 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
+using Automatisierung.src.check;
+
 namespace Automatisierung
 {
     internal static class Program
     {
         private static Timer daily;
         private static Timer hourlyTimer;
+
+        private static checkHandler checkHandler = new checkHandler();
 
         private static string currentDate;
         private static string lastDateActed;
@@ -38,22 +42,11 @@ namespace Automatisierung
 
         static void check(object state)
         {
-            var time = System.DateTime.Now.Hour.ToString();
-            var date = System.DateTime.Now.ToString("dd,MM,yyyy");
+            string time = System.DateTime.Now.Hour.ToString();
+            string date = System.DateTime.Now.ToString("dd");
+            string fullDate = System.DateTime.Now.ToString("dd.MM.yyyy");
 
-            
-            
-            string dateFirstPing = "01.06." + year;
-            
-            if (time == "17")
-            {
-                
-            }
-
-            switch (date)
-            {
-                case "01.06.":
-            }
+            checkHandler.check(time, date, fullDate);
         }
     }
 }
