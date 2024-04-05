@@ -7,15 +7,15 @@
       "RelativeMoniker": "D:0:0:{2990536E-E50D-4E13-9857-3F314DEB528B}|Automatisierung.csproj|solutionrelative:src\\check\\checkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2990536E-E50D-4E13-9857-3F314DEB528B}|Automatisierung.csproj|c:\\users\\fdeubner\\documents\\github\\windowsdienstclear\\automatisierung\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2990536E-E50D-4E13-9857-3F314DEB528B}|Automatisierung.csproj|C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2990536E-E50D-4E13-9857-3F314DEB528B}|Automatisierung.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2990536E-E50D-4E13-9857-3F314DEB528B}|Automatisierung.csproj|c:\\users\\fdeubner\\documents\\github\\windowsdienstclear\\automatisierung\\src\\enums\\taskenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2990536E-E50D-4E13-9857-3F314DEB528B}|Automatisierung.csproj|C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\src\\enums\\taskenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2990536E-E50D-4E13-9857-3F314DEB528B}|Automatisierung.csproj|solutionrelative:src\\enums\\taskenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2990536E-E50D-4E13-9857-3F314DEB528B}|Automatisierung.csproj|c:\\users\\fdeubner\\documents\\github\\windowsdienstclear\\automatisierung\\src\\tasks\\taskhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2990536E-E50D-4E13-9857-3F314DEB528B}|Automatisierung.csproj|C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\src\\tasks\\taskhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2990536E-E50D-4E13-9857-3F314DEB528B}|Automatisierung.csproj|solutionrelative:src\\tasks\\taskhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -42,8 +42,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAABwAAAAAAAAAAAAgwDAAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T15:25:17.693Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-04T15:25:17.693Z"
             },
             {
               "$type": "Document",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "src\\Enums\\taskEnum.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T15:23:30.589Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-04T15:23:30.589Z"
             },
             {
               "$type": "Document",
@@ -68,8 +66,7 @@
               "RelativeToolTip": "src\\tasks\\taskHandler.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T15:18:39.303Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-04T15:18:39.303Z"
             },
             {
               "$type": "Document",
@@ -79,7 +76,7 @@
               "RelativeDocumentMoniker": "src\\check\\checkHandler.cs",
               "ToolTip": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\src\\check\\checkHandler.cs",
               "RelativeToolTip": "src\\check\\checkHandler.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAABrAAAA",
+              "ViewState": "AQIAACAAAAAAAAAAAAAgwC4AAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-04T15:15:41.389Z",
               "EditorCaption": ""

@@ -16,7 +16,7 @@ namespace Automatisierung.src.check
 
         private const string timeForDailyTask = "17";
         private const string timeForWeeklyTask = "Friday";
-        private const string[] month = new string[12] {"1","2","3","4","5","6","7","8","9","10","11","12"}; 
+        private readonly string[] month = new string[] {"1","2","3","4","5","6","7","8","9","10","11","12"}; 
         private const string timeForMonthlyTask = "31";
         private const string timeForYearlyTask = "31.12";
 
@@ -44,7 +44,7 @@ namespace Automatisierung.src.check
             }
             else
             {
-                if ()
+                if (true)
                 {
 
                 }
