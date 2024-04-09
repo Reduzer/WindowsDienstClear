@@ -1,7 +1,0 @@
-C:\Users\FDeubner\Documents\GitHub\WindowsDienstClear\Automatisierung\obj\Debug\Automatisierung.csproj.AssemblyReference.cache
-C:\Users\FDeubner\Documents\GitHub\WindowsDienstClear\Automatisierung\obj\Debug\Automatisierung.csproj.CoreCompileInputs.cache
-C:\Users\FDeubner\Documents\GitHub\WindowsDienstClear\Automatisierung\bin\Debug\Automatisierung.exe.config
-C:\Users\FDeubner\Documents\GitHub\WindowsDienstClear\Automatisierung\bin\Debug\Automatisierung.exe
-C:\Users\FDeubner\Documents\GitHub\WindowsDienstClear\Automatisierung\bin\Debug\Automatisierung.pdb
-C:\Users\FDeubner\Documents\GitHub\WindowsDienstClear\Automatisierung\obj\Debug\Automatisierung.exe
-C:\Users\FDeubner\Documents\GitHub\WindowsDienstClear\Automatisierung\obj\Debug\Automatisierung.pdb
