@@ -5,22 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9A2F6AAE-BC9C-4F47-8815-1E630F459FA9}|ServiceStarter.csproj|c:\\users\\fdeubner\\documents\\github\\windowsdienstclear\\automatisierung\\servicestarter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A2F6AAE-BC9C-4F47-8815-1E630F459FA9}|ServiceStarter.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A2F6AAE-BC9C-4F47-8815-1E630F459FA9}|ServiceStarter.csproj|c:\\users\\fdeubner\\documents\\github\\windowsdienstclear\\automatisierung\\servicestarter\\objects\\weeklyobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A2F6AAE-BC9C-4F47-8815-1E630F459FA9}|ServiceStarter.csproj|solutionrelative:objects\\weeklyobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A2F6AAE-BC9C-4F47-8815-1E630F459FA9}|ServiceStarter.csproj|C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\ServiceStarter\\objects\\dailyobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A2F6AAE-BC9C-4F47-8815-1E630F459FA9}|ServiceStarter.csproj|solutionrelative:objects\\dailyobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A2F6AAE-BC9C-4F47-8815-1E630F459FA9}|ServiceStarter.csproj|C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\ServiceStarter\\objects\\hourlyobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A2F6AAE-BC9C-4F47-8815-1E630F459FA9}|ServiceStarter.csproj|solutionrelative:objects\\hourlyobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A2F6AAE-BC9C-4F47-8815-1E630F459FA9}|ServiceStarter.csproj|C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\ServiceStarter\\objects\\monthlyobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A2F6AAE-BC9C-4F47-8815-1E630F459FA9}|ServiceStarter.csproj|solutionrelative:objects\\monthlyobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,63 +14,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "weeklyObject.cs",
-              "DocumentMoniker": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\ServiceStarter\\Objects\\weeklyObject.cs",
-              "RelativeDocumentMoniker": "Objects\\weeklyObject.cs",
-              "ToolTip": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\ServiceStarter\\Objects\\weeklyObject.cs",
-              "RelativeToolTip": "Objects\\weeklyObject.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T07:09:27.381Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "monthlyObject.cs",
-              "DocumentMoniker": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\ServiceStarter\\Objects\\monthlyObject.cs",
-              "RelativeDocumentMoniker": "Objects\\monthlyObject.cs",
-              "ToolTip": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\ServiceStarter\\Objects\\monthlyObject.cs",
-              "RelativeToolTip": "Objects\\monthlyObject.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T22:29:02.352Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "dailyObject.cs",
-              "DocumentMoniker": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\ServiceStarter\\Objects\\dailyObject.cs",
-              "RelativeDocumentMoniker": "Objects\\dailyObject.cs",
-              "ToolTip": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\ServiceStarter\\Objects\\dailyObject.cs",
-              "RelativeToolTip": "Objects\\dailyObject.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T22:28:52.402Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "hourlyObject.cs",
-              "DocumentMoniker": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\ServiceStarter\\Objects\\hourlyObject.cs",
-              "RelativeDocumentMoniker": "Objects\\hourlyObject.cs",
-              "ToolTip": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\ServiceStarter\\Objects\\hourlyObject.cs",
-              "RelativeToolTip": "Objects\\hourlyObject.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T22:28:34.933Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -96,7 +28,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\ServiceStarter\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAQwD4AAAAqAAAA",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAowFEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-09T22:02:05.774Z",
               "EditorCaption": ""

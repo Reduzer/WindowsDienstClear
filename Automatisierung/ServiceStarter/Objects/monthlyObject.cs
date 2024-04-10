@@ -8,18 +8,25 @@ namespace ServiceStarter
 {
     internal class monthlyObject
     {
-        private string date;
+        private const string type = "monthly";
+        private string nextTimeToDo;
         private string lastTimeChecked;
-
-        public monthlyObject()
-        {
-
-        }
 
         public string LastTimeChecked
         {
             get { return lastTimeChecked; }
             set { lastTimeChecked = value; }
+        }
+
+        public string NextTimeToDo
+        {
+            get { return nextTimeToDo; }
+            set { nextTimeToDo = value; } 
+        }
+
+        public string Type
+        {
+            get { return type; }
         }
     }
 }

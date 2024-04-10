@@ -49,9 +49,31 @@ namespace ServiceStarter
 
         private static void timerCheck(object state)
         {
-            if (true /*check for object type*/)
+            if (state == hourlyObject)
             {
-                
+                doTasksHourly();
+            }
+            else
+            {
+                if (state == dailyObject)
+                {
+                    doTasksDaily();
+                }
+                else
+                {
+                    if (state == weeklyObject)
+                    {
+                        doTasksWeekly();
+                    }
+                    else
+                    {
+                        if (state == monthlyObject)
+                        {
+                            doTasksMonthly();
+                        }
+                    }
+
+                }
             }
         }
 

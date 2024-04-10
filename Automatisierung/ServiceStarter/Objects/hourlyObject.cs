@@ -8,18 +8,24 @@ namespace ServiceStarter
 {
     internal class hourlyObject
     {
-        private string date;
+        private const string type = "hourly";
+        private string nextTimeToDo;
         private string lastTimeChecked;
 
-        public hourlyObject()
+        public string NextTimeToDo
         {
-
+            get { return nextTimeToDo; }
+            set { nextTimeToDo = value; }
         }
 
         public string LastTimeChecked
         {
             get { return lastTimeChecked; }
             set { lastTimeChecked = value; }
+        }
+        public string Type
+        {
+            get { return type; }
         }
     }
 }
