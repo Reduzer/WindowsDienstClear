@@ -8,17 +8,16 @@ namespace ClientSetupService
 {
     public class ClientSetup
     {
+        private compareVersions compareVersions;
+        private getNewVersion getNewestVersion;
+
         public ClientSetup()
         {
-            Init();
+            compareVersions = new compareVersions();
+            getNewestVersion = new getNewVersion();
         }
 
-        private void Init()
-        {
-
-        }
-
-        public void Main()
+        public void main()
         {
 
         }

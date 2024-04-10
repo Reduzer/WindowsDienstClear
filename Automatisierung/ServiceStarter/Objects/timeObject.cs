@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace ServiceStarter
 {
-    internal class dailyObject
+    internal class timeObject
     {
-        private const string type = "daily";
+        private readonly string type;
         private string nextTimeToDo;
         private string lastTimeChecked;
+
+        public timeObject(string type)
+        {
+            this.type = type;
+        }
 
         public string NextTimeToDo
         {

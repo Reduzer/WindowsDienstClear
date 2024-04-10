@@ -3,33 +3,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.ServiceProcess;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 using PingService;
 using ClientSetupService;
 using SkriptService;
 using UpdateService;
-using System.Threading;
-using ServiceStarter.Objects;
+
 
 namespace ServiceStarter
 {
     internal static class Program
     {
-        private static Ping Ping = new Ping();
-        private static ClientSetup ClientSetup = new ClientSetup();
-        private static Skript Skript = new Skript();
-        private static Update Update = new Update();
 
-        private static hourlyObject hourlyObject = new hourlyObject();
-        private static dailyObject dailyObject = new dailyObject();
-        private static weeklyObject weeklyObject = new weeklyObject();
-        private static monthlyObject monthlyObject = new monthlyObject();
+        private static timeObject hourlyObject = new timeObject("hourly");
+        private static timeObject dailyObject = new timeObject("daily");
+        private static timeObject weeklyObject = new timeObject("weekly");
+        private static timeObject monthlyObject = new timeObject("monthly");
 
-        private static readonly int timeHourly = 0 * 0 * 0 * 60 * 60 * 1000;
-        private static readonly int timeDaily = 0 * 0 * 24 * 60 * 60 * 1000;
-        private static readonly int timeWeekly = 0 * 7 * 24 * 60 * 60 * 1000;
-        private static readonly long timeMonthly = 30 * 24 * 60 * 60 * 1000; 
+        private static taskHandler taskHandler = new taskHandler();
+
+        private static readonly int timeHourly = 60 * 60 * 1000;
+        private static readonly int timeDaily = timeHourly * 24;
+        private static readonly int timeWeekly = timeDaily * 7;
+        private static readonly int timeMonthly = timeWeekly * 30; 
 
         private static readonly int timeForDailyTasks = 17;
 
@@ -42,66 +40,48 @@ namespace ServiceStarter
             };
             ServiceBase.Run(ServicesToRun);
 
-            unchecked
-            {
-                Timer timerHourly = new Timer(timerCheck, hourlyObject, 0, timeHourly);
-                Timer timerDaily = new Timer(timerCheck, dailyObject, 0, timeDaily);
-                Timer timerWeekly = new Timer(timerCheck, weeklyObject, 0, timeWeekly);
-                Timer timerMonthly = new Timer(timerCheck, monthlyObject, 0, timeMonthly);
-            }
+            Timer timerHourly = new Timer(timerCheck, hourlyObject, 0, timeHourly);
+            Timer timerDaily = new Timer(timerCheck, dailyObject, 0, timeDaily);
+            Timer timerWeekly = new Timer(timerCheck, weeklyObject, 0, timeWeekly);
+            Timer timerMonthly = new Timer(timerCheck, monthlyObject, 0, timeMonthly);
+            
         }
 
         private static void timerCheck(object state)
         {
             if (state == hourlyObject)
             {
-                doTasksHourly();
+                taskHandler.newTask(hourlyObject);
             }
             else
             {
                 if (state == dailyObject)
                 {
-                    doTasksDaily();
+                    if (System.DateTime.Now.Hour == timeForDailyTasks)
+                    {
+                        taskHandler.newTask(dailyObject);
+                    }
                 }
                 else
                 {
                     if (state == weeklyObject)
                     {
-                        doTasksWeekly();
+                        taskHandler.newTask(weeklyObject);
                     }
                     else
                     {
                         if (state == monthlyObject)
                         {
-                            doTasksMonthly();
+                            taskHandler.newTask(monthlyObject);
+                        }
+                        else
+                        {
+                            throw new Exception("Aufgabenverteilung Scheitert aus Gründen");
                         }
                     }
 
                 }
             }
-        }
-
-        private static void doTasksHourly()
-        {
-            if (System.DateTime.Now.Hour == timeForDailyTasks)
-            {
-
-            }
-        }
-
-        private static void doTasksDaily()
-        {
-
-        }
-
-        private static void doTasksWeekly()
-        {
-
-        }
-
-        private static void doTasksMonthly()
-        {
-
         }
     }
 }

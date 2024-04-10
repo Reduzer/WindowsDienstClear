@@ -38,5 +38,8 @@
   <ItemGroup>
     <Compile Include="main.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
