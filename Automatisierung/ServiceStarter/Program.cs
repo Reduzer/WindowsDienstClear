@@ -21,15 +21,17 @@ namespace ServiceStarter
         private static Skript Skript = new Skript();
         private static Update Update = new Update();
 
-        private static readonly int timeHourly = 0;
-        private static readonly int timeDaily = 0;
-        private static readonly int timeWeekly = 0;
-        private static readonly int timeMonthly = 0;
-
         private static hourlyObject hourlyObject = new hourlyObject();
         private static dailyObject dailyObject = new dailyObject();
         private static weeklyObject weeklyObject = new weeklyObject();
         private static monthlyObject monthlyObject = new monthlyObject();
+
+        private static readonly int timeHourly = 0 * 0 * 0 * 60 * 60 * 1000;
+        private static readonly int timeDaily = 0 * 0 * 24 * 60 * 60 * 1000;
+        private static readonly int timeWeekly = 0 * 7 * 24 * 60 * 60 * 1000;
+        private static readonly long timeMonthly = 30 * 24 * 60 * 60 * 1000; 
+
+        private static readonly int timeForDailyTasks = 17;
 
         static void Main()
         {
@@ -40,11 +42,13 @@ namespace ServiceStarter
             };
             ServiceBase.Run(ServicesToRun);
 
-            Timer timerHourly = new Timer(timerCheck, hourlyObject, 0, timeHourly);
-            Timer timerDaily = new Timer(timerCheck, dailyObject, 0, timeDaily);
-            Timer timerWeekly = new Timer(timerCheck, weeklyObject, 0, timeWeekly);
-            Timer timerMonthly = new Timer(timerCheck, monthlyObject, 0, timeMonthly);
-
+            unchecked
+            {
+                Timer timerHourly = new Timer(timerCheck, hourlyObject, 0, timeHourly);
+                Timer timerDaily = new Timer(timerCheck, dailyObject, 0, timeDaily);
+                Timer timerWeekly = new Timer(timerCheck, weeklyObject, 0, timeWeekly);
+                Timer timerMonthly = new Timer(timerCheck, monthlyObject, 0, timeMonthly);
+            }
         }
 
         private static void timerCheck(object state)
@@ -79,7 +83,10 @@ namespace ServiceStarter
 
         private static void doTasksHourly()
         {
+            if (System.DateTime.Now.Hour == timeForDailyTasks)
+            {
 
+            }
         }
 
         private static void doTasksDaily()
