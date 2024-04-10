@@ -53,6 +53,7 @@
       <DependentUpon>InstandhalterRich.cs</DependentUpon>
     </Compile>
     <Compile Include="Objects\monthlyObject.cs" />
+    <Compile Include="Objects\weeklyObject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
