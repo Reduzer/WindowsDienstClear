@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F0E97965-C9A9-45CC-AFEE-904F8B193554}</ProjectGuid>
+    <ProjectGuid>{E09E6046-01A8-44D5-9F97-D5A7E958360B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>SkriptService</RootNamespace>
-    <AssemblyName>SkriptService</AssemblyName>
+    <RootNamespace>BackupService</RootNamespace>
+    <AssemblyName>BackupService</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,13 +34,6 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Exceptions\CheckFailedException.cs" />
-    <Compile Include="Main.cs" />
-    <Compile Include="src\getSkripts.cs" />
-    <Compile Include="src\handler.cs" />
-    <Compile Include="src\runSkripts.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

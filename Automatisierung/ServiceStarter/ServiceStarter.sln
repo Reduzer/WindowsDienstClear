@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkriptService", "..\SkriptS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LockUsersService", "..\LockUsersService\LockUsersService.csproj", "{50FB0878-C70D-4F6A-9C7F-D6981BC621CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackupService", "..\BackupService\BackupService.csproj", "{E09E6046-01A8-44D5-9F97-D5A7E958360B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +50,10 @@ Global
 		{50FB0878-C70D-4F6A-9C7F-D6981BC621CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50FB0878-C70D-4F6A-9C7F-D6981BC621CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50FB0878-C70D-4F6A-9C7F-D6981BC621CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E09E6046-01A8-44D5-9F97-D5A7E958360B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E09E6046-01A8-44D5-9F97-D5A7E958360B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E09E6046-01A8-44D5-9F97-D5A7E958360B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E09E6046-01A8-44D5-9F97-D5A7E958360B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

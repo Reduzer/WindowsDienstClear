@@ -10,17 +10,20 @@ using PingService;
 using ClientSetupService;
 using SkriptService;
 using UpdateService;
-
+using ServiceStarter.Enums;
 
 namespace ServiceStarter
 {
     internal static class Program
     {
-
-        private static timeObject hourlyObject = new timeObject("hourly");
-        private static timeObject dailyObject = new timeObject("daily");
-        private static timeObject weeklyObject = new timeObject("weekly");
-        private static timeObject monthlyObject = new timeObject("monthly");
+        private static timeObject m_hourlyObject = new timeObject(timeIntervals.hourly.ToString());
+        private static timeObject m_dailyObject = new timeObject(timeIntervals.daily.ToString());
+        private static timeObject m_weeklyObject = new timeObject(timeIntervals.weekly.ToString());
+        private static timeObject m_monthlyObject = new timeObject(timeIntervals.monthly.ToString());
+        private static timeObject m_quaterlyObject = new timeObject(timeIntervals.quaterly.ToString());
+        private static timeObject m_fourMonthObject = new timeObject(timeIntervals.fourMonth.ToString());
+        private static timeObject m_halfYearObject = new timeObject(timeIntervals.halfYear.ToString());
+        private static timeObject m_anualyObject = new timeObject(timeIntervals.anualy.ToString());
 
         private static taskHandler taskHandler = new taskHandler();
 
@@ -40,39 +43,39 @@ namespace ServiceStarter
             };
             ServiceBase.Run(ServicesToRun);
 
-            Timer timerHourly = new Timer(timerCheck, hourlyObject, 0, timeHourly);
-            Timer timerDaily = new Timer(timerCheck, dailyObject, 0, timeDaily);
-            Timer timerWeekly = new Timer(timerCheck, weeklyObject, 0, timeWeekly);
-            Timer timerMonthly = new Timer(timerCheck, monthlyObject, 0, timeMonthly);
+            Timer timerHourly = new Timer(timerCheck, m_hourlyObject, 0, timeHourly);
+            Timer timerDaily = new Timer(timerCheck, m_dailyObject, 0, timeDaily);
+            Timer timerWeekly = new Timer(timerCheck, m_weeklyObject, 0, timeWeekly);
+            Timer timerMonthly = new Timer(timerCheck, m_monthlyObject, 0, timeMonthly);
             
         }
 
         private static void timerCheck(object state)
         {
-            if (state == hourlyObject)
+            if (state == m_hourlyObject)
             {
-                taskHandler.newTask(hourlyObject);
+                taskHandler.newTask(m_hourlyObject);
             }
             else
             {
-                if (state == dailyObject)
+                if (state == m_dailyObject)
                 {
                     if (System.DateTime.Now.Hour == timeForDailyTasks)
                     {
-                        taskHandler.newTask(dailyObject);
+                        taskHandler.newTask(m_dailyObject);
                     }
                 }
                 else
                 {
-                    if (state == weeklyObject)
+                    if (state == m_weeklyObject)
                     {
-                        taskHandler.newTask(weeklyObject);
+                        taskHandler.newTask(m_weeklyObject);
                     }
                     else
                     {
-                        if (state == monthlyObject)
+                        if (state == m_monthlyObject)
                         {
-                            taskHandler.newTask(monthlyObject);
+                            taskHandler.newTask(m_monthlyObject);
                         }
                         else
                         {
