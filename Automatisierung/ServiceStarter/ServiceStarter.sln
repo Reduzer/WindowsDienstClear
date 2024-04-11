@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStarter", "ServiceStarter.csproj", "{9A2F6AAE-BC9C-4F47-8815-1E630F459FA9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{50FB0878-C70D-4F6A-9C7F-D6981BC621CA} = {50FB0878-C70D-4F6A-9C7F-D6981BC621CA}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpdateService", "..\UpdateService\UpdateService.csproj", "{2F2FFCA5-6FBC-42C2-A1BB-5C44E10D05C2}"
 EndProject

@@ -10,7 +10,7 @@
       "AbsoluteMoniker": "D:0:0:{EB8FB1F4-5658-48BE-AC88-D176B328481E}|..\\PingService\\PingService.csproj|c:\\users\\fdeubner\\documents\\github\\windowsdienstclear\\automatisierung\\pingservice\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A2F6AAE-BC9C-4F47-8815-1E630F459FA9}|ServiceStarter.csproj|c:\\users\\fdeubner\\documents\\github\\windowsdienstclear\\automatisierung\\servicestarter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9A2F6AAE-BC9C-4F47-8815-1E630F459FA9}|ServiceStarter.csproj|C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\ServiceStarter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A2F6AAE-BC9C-4F47-8815-1E630F459FA9}|ServiceStarter.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -37,8 +37,7 @@
               "RelativeToolTip": "..\\PingService\\main.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T14:07:59.547Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-10T14:07:59.547Z"
             },
             {
               "$type": "Document",
@@ -50,8 +49,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABEAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T14:00:52.655Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-10T14:00:52.655Z"
             },
             {
               "$type": "Document",
@@ -61,7 +59,7 @@
               "RelativeDocumentMoniker": "Objects\\taskHandler.cs",
               "ToolTip": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\ServiceStarter\\Objects\\taskHandler.cs",
               "RelativeToolTip": "Objects\\taskHandler.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAowDoAAAAAAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAUwDgAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-10T12:38:59.592Z",
               "EditorCaption": ""
