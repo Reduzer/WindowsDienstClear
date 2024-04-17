@@ -1,0 +1,2 @@
+C:\Users\FDeubner\Documents\GitHub\WindowsDienstClear\Automatisierung\BackupService\obj\Debug\BackupService.csproj.AssemblyReference.cache
+C:\Users\FDeubner\Documents\GitHub\WindowsDienstClear\Automatisierung\BackupService\obj\Debug\BackupService.csproj.CoreCompileInputs.cache

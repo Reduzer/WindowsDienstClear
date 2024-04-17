@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SkriptService.Exceptions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,5 +13,41 @@ namespace SkriptService.src
 
     internal class runSkripts
     {
+        private string sPath;
+
+        List<string> sFileNames = new List<string>();
+
+        public runSkripts(string Path) 
+        {
+            sPath = Path;
+        }
+
+        public bool run(List<string> List)
+        {
+            sFileNames = List;
+
+            try
+            {
+                doStuff();
+
+                return true;
+            }
+            catch (RunFailedException)
+            {
+                return false;
+            }
+        }
+
+        private void doStuff()
+        {
+            try
+            {
+
+            }
+            catch (Exception)
+            {
+                throw new RunFailedException();
+            }
+        }
     }
 }
