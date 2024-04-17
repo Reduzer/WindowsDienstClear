@@ -1,6 +1,7 @@
 ﻿using SkriptService.Exceptions;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Security.AccessControl;
 using System.Text;
@@ -43,12 +44,37 @@ namespace SkriptService.src
 
         private void get()
         {
-            
+            var source = new DirectoryInfo(path);
+
+            var myFiles = (from f in source.GetFiles()
+                           where f.Extension == ".bat"
+                           select f);
+
+            foreach (var s in myFiles)
+            {
+                sSkriptsNames.Add(s.Name);
+            }
+
+
+            var myfiles = (from f in source.GetFiles()
+                           where f.Extension == ""
+                           select f);
+            foreach (var s in myfiles)
+            {
+                sSkriptsNames.Add(s.Name);
+            }
         }
 
         private bool check()
         {
-            return false;
+            if (sSkriptsNames == null)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
     }
 }

@@ -20,18 +20,11 @@ namespace SkriptService
         public Skript() 
         {
             m_skriptHandler = new handler(sPath);
-
-            Init();
         }
 
-        private void Init()
+        public void RunSkripts()
         {
-
-        }
-
-        public void Main()
-        {
-
+            m_skriptHandler.doThings();
         }
     }
 }

@@ -1,22 +1,31 @@
-﻿using ClientSetupService;
-using PingService;
-using SkriptService;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using UpdateService;
+using ClientSetupService;
+using PingService;
+using SkriptService;
+using BackupService;
+using LockUsersService;
+using ServiceStarter.Exceptions;
 
 namespace ServiceStarter
 {
+    /// <summary>
+    /// 
+    /// </summary>
     internal class taskHandler
     {
         private Ping Pong = new Ping();
         private ClientSetup ClientSetup = new ClientSetup();
         private Skript Skript = new Skript();
         private Update Update = new Update();
+        private Backup backup = new Backup();
+        private lockusers lockusers = new lockusers();
 
         public taskHandler()
         {
@@ -46,7 +55,14 @@ namespace ServiceStarter
 
         private void doTasksHourly()
         {
+            try
+            {
+                lockusers.lockUsers();
+            }
+            catch (FailedToExecuteExceptions)
+            {
 
+            }
         }
 
         private void doTasksDaily()
@@ -63,6 +79,5 @@ namespace ServiceStarter
         {
 
         }
-
     }
 }
