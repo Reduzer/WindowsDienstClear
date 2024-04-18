@@ -33,7 +33,7 @@
               "RelativeDocumentMoniker": "..\\LockUsersService\\src\\lockUsers.cs",
               "ToolTip": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\LockUsersService\\src\\lockUsers.cs",
               "RelativeToolTip": "..\\LockUsersService\\src\\lockUsers.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA6AAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAYwBYAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-18T07:21:34.355Z",
               "EditorCaption": ""
@@ -48,8 +48,7 @@
               "RelativeToolTip": "..\\LockUsersService\\src\\getUsers.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T06:37:44.353Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-18T06:37:44.353Z"
             },
             {
               "$type": "Document",
@@ -61,8 +60,7 @@
               "RelativeToolTip": "..\\LockUsersService\\lockusers.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T13:43:29.761Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-17T13:43:29.761Z"
             }
           ]
         },

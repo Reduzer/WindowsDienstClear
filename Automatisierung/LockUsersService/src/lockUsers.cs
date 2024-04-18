@@ -18,7 +18,13 @@ namespace LockUsersService.src
 
         public void uLock(List<string> vs_User)
         {
+            this.vs_User = vs_User;
 
+            LockUsers();
+        }
+
+        private void LockUsers()
+        {
 
         }
     }
