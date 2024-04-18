@@ -1,5 +1,7 @@
 # Readme
 
+Das Verzeichniss Automatisierung beinhaltet den Aktuellen Code!
+
 ## Inhalt
 
 - Hintergrund
