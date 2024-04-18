@@ -8,5 +8,13 @@ namespace LockUsersService.src
 {
     internal class getUsers
     {
+        public getUsers()
+        {
+
+        }
+
+        
+
+
     }
 }

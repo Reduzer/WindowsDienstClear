@@ -3,15 +3,13 @@
   "WorkspaceRootPath": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\ServiceStarter\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{50FB0878-C70D-4F6A-9C7F-D6981BC621CA}|..\\LockUsersService\\LockUsersService.csproj|c:\\users\\fdeubner\\documents\\github\\windowsdienstclear\\automatisierung\\lockusersservice\\src\\lockusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50FB0878-C70D-4F6A-9C7F-D6981BC621CA}|..\\LockUsersService\\LockUsersService.csproj|c:\\users\\fdeubner\\documents\\github\\windowsdienstclear\\automatisierung\\lockusersservice\\src\\getusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{50FB0878-C70D-4F6A-9C7F-D6981BC621CA}|..\\LockUsersService\\LockUsersService.csproj|c:\\users\\fdeubner\\documents\\github\\windowsdienstclear\\automatisierung\\lockusersservice\\lockusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A2F6AAE-BC9C-4F47-8815-1E630F459FA9}|ServiceStarter.csproj|c:\\users\\fdeubner\\documents\\github\\windowsdienstclear\\automatisierung\\servicestarter\\src\\taskhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A2F6AAE-BC9C-4F47-8815-1E630F459FA9}|ServiceStarter.csproj|solutionrelative:src\\taskhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A2F6AAE-BC9C-4F47-8815-1E630F459FA9}|ServiceStarter.csproj|c:\\users\\fdeubner\\documents\\github\\windowsdienstclear\\automatisierung\\servicestarter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A2F6AAE-BC9C-4F47-8815-1E630F459FA9}|ServiceStarter.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,6 +28,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "lockUsers.cs",
+              "DocumentMoniker": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\LockUsersService\\src\\lockUsers.cs",
+              "RelativeDocumentMoniker": "..\\LockUsersService\\src\\lockUsers.cs",
+              "ToolTip": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\LockUsersService\\src\\lockUsers.cs",
+              "RelativeToolTip": "..\\LockUsersService\\src\\lockUsers.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T07:21:34.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "getUsers.cs",
+              "DocumentMoniker": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\LockUsersService\\src\\getUsers.cs",
+              "RelativeDocumentMoniker": "..\\LockUsersService\\src\\getUsers.cs",
+              "ToolTip": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\LockUsersService\\src\\getUsers.cs",
+              "RelativeToolTip": "..\\LockUsersService\\src\\getUsers.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T06:37:44.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "lockusers.cs",
               "DocumentMoniker": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\LockUsersService\\lockusers.cs",
               "RelativeDocumentMoniker": "..\\LockUsersService\\lockusers.cs",
@@ -38,32 +62,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-17T13:43:29.761Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "taskHandler.cs",
-              "DocumentMoniker": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\ServiceStarter\\src\\taskHandler.cs",
-              "RelativeDocumentMoniker": "src\\taskHandler.cs",
-              "ToolTip": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\ServiceStarter\\src\\taskHandler.cs",
-              "RelativeToolTip": "src\\taskHandler.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAowDsAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T12:20:02.721Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\ServiceStarter\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\ServiceStarter\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACIAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T12:17:48.812Z",
               "EditorCaption": ""
             }
           ]
