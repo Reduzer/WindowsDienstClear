@@ -1,12 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\ServiceStarter\\",
+  "WorkspaceRootPath": "G:\\Git\\WindowsDienstClear\\Automatisierung\\ServiceStarter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F0E97965-C9A9-45CC-AFEE-904F8B193554}|..\\SkriptService\\SkriptService.csproj|c:\\users\\fdeubner\\documents\\github\\windowsdienstclear\\automatisierung\\skriptservice\\src\\handler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0E97965-C9A9-45CC-AFEE-904F8B193554}|..\\SkriptService\\SkriptService.csproj|g:\\git\\windowsdienstclear\\automatisierung\\skriptservice\\src\\getskripts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0E97965-C9A9-45CC-AFEE-904F8B193554}|..\\SkriptService\\SkriptService.csproj|c:\\users\\fdeubner\\documents\\github\\windowsdienstclear\\automatisierung\\skriptservice\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0E97965-C9A9-45CC-AFEE-904F8B193554}|..\\SkriptService\\SkriptService.csproj|g:\\git\\windowsdienstclear\\automatisierung\\skriptservice\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -16,51 +16,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "handler.cs",
-              "DocumentMoniker": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\SkriptService\\src\\handler.cs",
-              "RelativeDocumentMoniker": "..\\SkriptService\\src\\handler.cs",
-              "ToolTip": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\SkriptService\\src\\handler.cs",
-              "RelativeToolTip": "..\\SkriptService\\src\\handler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAxAAAA",
+              "Title": "getSkripts.cs",
+              "DocumentMoniker": "G:\\Git\\WindowsDienstClear\\Automatisierung\\SkriptService\\src\\getSkripts.cs",
+              "RelativeDocumentMoniker": "..\\SkriptService\\src\\getSkripts.cs",
+              "ToolTip": "G:\\Git\\WindowsDienstClear\\Automatisierung\\SkriptService\\src\\getSkripts.cs",
+              "RelativeToolTip": "..\\SkriptService\\src\\getSkripts.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T10:50:14.231Z",
+              "WhenOpened": "2024-04-28T19:48:41.877Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Main.cs",
-              "DocumentMoniker": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\SkriptService\\Main.cs",
+              "DocumentMoniker": "G:\\Git\\WindowsDienstClear\\Automatisierung\\SkriptService\\Main.cs",
               "RelativeDocumentMoniker": "..\\SkriptService\\Main.cs",
-              "ToolTip": "C:\\Users\\FDeubner\\Documents\\GitHub\\WindowsDienstClear\\Automatisierung\\SkriptService\\Main.cs",
+              "ToolTip": "G:\\Git\\WindowsDienstClear\\Automatisierung\\SkriptService\\Main.cs",
               "RelativeToolTip": "..\\SkriptService\\Main.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T10:49:01.097Z",
+              "WhenOpened": "2024-04-28T19:48:34.916Z",
               "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 745,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }
