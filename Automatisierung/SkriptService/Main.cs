@@ -15,11 +15,20 @@ namespace SkriptService
     {
         private handler m_skriptHandler;
 
-        private readonly string sPath = "";
+        private List<Strings> typeList = new List<Strings>();
+
+        
 
         public Skript() 
         {
-            m_skriptHandler = new handler(sPath);
+            m_skriptHandler = new handler();
+        }
+
+        private void fillList(){
+            typeList.Add("");
+            typeList.Add("");
+            typeList.Add("");
+            typeList.Add("");
         }
 
         public void RunSkripts()

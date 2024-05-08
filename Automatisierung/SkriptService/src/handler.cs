@@ -5,6 +5,8 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
+using SkriptService.Exceptions;
+
 namespace SkriptService.src
 {
     /// <summary>
@@ -15,13 +17,17 @@ namespace SkriptService.src
         private getSkripts m_getSkripts;
         private runSkripts m_runSkripts;
 
+        private List<string> typeList = new List<string>();
+
         private string sPath;
 
-        public handler(string path)
+        public handler(List<string> givenTypes)
         {
-            sPath = path;
-            m_getSkripts = new getSkripts(sPath);
-            m_runSkripts = new runSkripts(sPath);
+            foreach(string s in typeList){
+                sPath = getCorrectSkripts(givenTypes[i]);
+                m_getSkripts = new getSkripts(sPath);
+                m_runSkripts = new runSkripts(sPath);
+            }
         }
 
         public void doThings()
@@ -29,14 +35,33 @@ namespace SkriptService.src
             run(get());
         }
 
+        private string getCorrectSkripts(string path){
+            switch(type){
+                case "":
+            }
+        }
+
         private List<string> get()
         {
             return m_getSkripts.getSkript();
         }
 
-        private void run(List<String> sList)
+        private bool run(List<String> sList)
         {
-            m_runSkripts.run(sList);
+            try{
+                if(m_runSkripts.run(sList);){
+                    
+                }
+                else{
+                    throw new runntimeException();
+                }
+            }
+            catch(runntimeException){
+
+            }
+            catch(Exception){
+                
+            }
         }
     }
 }
