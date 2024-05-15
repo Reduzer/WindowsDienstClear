@@ -1,8 +1,5 @@
 # Readme
 
-## Inhalt
+## Aufgaben
 
-- Hintergrund
-- Aufbau
-- Erweiterbarkeit
-- Änderungen
+
