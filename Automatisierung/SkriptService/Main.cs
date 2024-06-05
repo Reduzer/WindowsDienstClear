@@ -15,13 +15,18 @@ namespace SkriptService
     {
         private handler m_skriptHandler;
 
-        private List<Strings> typeList = new List<Strings>();
+        private List<String> typeList = new List<String>();
 
         
 
         public Skript() 
         {
-            m_skriptHandler = new handler();
+            m_skriptHandler = new handler(typeList);
+        }
+
+        public static void Main(string[] args)
+        {
+
         }
 
         private void fillList(){
